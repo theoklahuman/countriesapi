@@ -1,0 +1,6 @@
+.Header {
+    display: flex;
+    background: gray;
+    text-align: center;
+    padding: 0.3rem;
+}
