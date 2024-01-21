@@ -1,11 +1,12 @@
 import "./Header.css"
-import moonIcon from "../assets/moon-regular.svg"
+import moonIcon from "../assets/moon-solid.svg"
 
 function Header() {
-    return <header className="Header">
-        <p>Where in the world?</p>
+    return <header className="header">
+        <p className="headerTitle">Where in the world?</p>
         <img src={moonIcon} alt="moon icon" />
-        <p>Dark Mode</p>
+        <p className="currentMode">Dark Mode</p>
+
     </header>
 }
 
