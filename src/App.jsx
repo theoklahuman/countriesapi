@@ -14,11 +14,15 @@ const asianCountries = jsonData.filter((country) => country.region === "Asia" );
 // console.log(europeanCountries);
 
 function App() {
+  const [currentCountries, setCurrentCountries] = useState(africanCountries);
+  function updateDisplayedCountries() {
+    setCurrentCountries(asianCountries);
+  }
   return (
     <>
     <Header />
-    <Search />
-    <Countries countryNames={europeanCountries}/>
+    <Search clickAction={updateDisplayedCountries}/>
+    <Countries countryNames={currentCountries}/>
     </>
   )
 }
